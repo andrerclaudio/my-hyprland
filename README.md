@@ -1,6 +1,6 @@
 # Frogprog Hyprland Dotfiles
 
-A minimalistic Hyprland configuration for linux (Arch). I use it as a productive setup.
+A minimalistic Hyprland configuration for linux (Arch). I use it as a productive setup on my thinkpad (14 inch).
 
 ![Image](https://github.com/user-attachments/assets/acbd0325-0c5e-46c6-8bff-53ed177ca249)
 
