@@ -112,10 +112,10 @@ if test -f ~/.config/starship.toml; then
   fi
 fi
 
-# installing wallpapers directory
-
 cp DOTFILES/.config/starship.toml ~/.config/
 echo "Copied ${bald}starship${normal} file from this repo to ${bald}~/.config/${normal} directory"
+
+# installing wallpapers directory
 
 if test -d ~/.config/wallpapers/; then
   echo "Found ${bald}~/.config/wallpapers/${normal} directory, backuping it into ${bald}~/.config/wallpapers-backup..."
