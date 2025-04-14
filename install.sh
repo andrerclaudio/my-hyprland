@@ -115,6 +115,18 @@ fi
 cp DOTFILES/.config/starship.toml ~/.config/
 echo "Copied ${bald}starship${normal} file from this repo to ${bald}~/.config/${normal} directory"
 
+if test -d ~/.config/wallpapers/; then
+  echo "Found ${bald}~/.config/wallpapers/${normal} directory, backuping it into ${bald}~/.config/wallpapers-backup..."
+  mv ~/.config/wallpapers ~/.config/wallpapers-backup
+   if [ $? -eq 0 ]; then
+    echo "Now your old wallpapers are in ${bald}~/.config/wallpapers-backup${normal} directory"
+  fi
+fi
+
+cp -r wallpapers ~/.config/
+echo "Copied ${bald}wallpapers${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+
+
 cat << "BYE"
 __  __                       ______              ______________   ______            ____________             
 _ \/ /_________  __   __________  /___________  ____  /_____  /   ___  /______      ___  __/__(_)___________ 
@@ -123,5 +135,5 @@ _  / / /_/ / /_/ /    _(__  )_  / / / /_/ / /_/ /_  / / /_/ /     _  /_/ /  __/ 
 /_/  \____/\__,_/     /____/ /_/ /_/\____/\__,_/ /_/  \__,_/      /_.___/\___/      /_/    /_/  /_/ /_/\___/ 
 BYE
 
-echo "Everything should be ok for now, please report if smth whent wrong."
+echo "Everything should be ok for now, please report if smth went wrong."
 echo "Thank you for using my dots, have a great day!"
