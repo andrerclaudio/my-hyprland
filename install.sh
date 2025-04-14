@@ -112,6 +112,8 @@ if test -f ~/.config/starship.toml; then
   fi
 fi
 
+# installing wallpapers directory
+
 cp DOTFILES/.config/starship.toml ~/.config/
 echo "Copied ${bald}starship${normal} file from this repo to ${bald}~/.config/${normal} directory"
 
@@ -125,6 +127,19 @@ fi
 
 cp -r wallpapers ~/.config/
 echo "Copied ${bald}wallpapers${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+
+# installing rofi directory
+
+if test -d ~/.config/rofi/; then
+  echo "Found ${bald}~/.config/rofi${normal} directory, backuping it into ${bald}~/.config/rofi-backup..."
+  mv ~/.config/rofi/ ~/.config/rofi-backup
+   if [ $? -eq 0 ]; then
+    echo "Now your old configs are in ${bald}~/.config/rofi-backup${normal} directory"
+  fi
+fi
+
+cp -r DOTFILES/.config/rofi ~/.config/
+echo "Copied ${bald}rofi${normal} directory from this repo to ${bald}~/.config/${normal} directory"
 
 
 cat << "BYE"
