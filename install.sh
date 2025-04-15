@@ -141,6 +141,19 @@ fi
 cp -r DOTFILES/.config/rofi ~/.config/
 echo "Copied ${bald}rofi${normal} directory from this repo to ${bald}~/.config/${normal} directory"
 
+# installing .face file
+#
+
+if test -f ~/.face; then
+  echo "Found ${bald}~/.face${normal} file, backuping it into ${bald}~/.face-backup..."
+  mv ~/.face ~/.face-backup   
+  if [ $? -eq 0 ]; then
+    echo "Now your old avatar is in ${bald}~/.face-backup${normal} file"
+  fi
+fi
+
+cp .face ~/
+echo "Copied ${bald}.face${normal} file from this repo to ${bald}home${normal} directory"
 
 cat << "BYE"
 __  __                       ______              ______________   ______            ____________             
