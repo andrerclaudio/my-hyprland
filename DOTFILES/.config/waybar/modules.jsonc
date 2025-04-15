@@ -151,7 +151,7 @@
 
   "custom/launcher": {
     "format": " ",
-    "on-click": "~/rofi/files/launchers/type-1/launcher.sh",
+    "on-click": "rofi -show drun",
     "tooltip": "false",
   },
 

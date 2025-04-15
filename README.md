@@ -2,6 +2,14 @@
 
 A minimalistic Hyprland configuration for linux (Arch). I use it as a productive setup on my thinkpad (14 inch).
 
+| Sysetm part | Name |
+|---|---|
+| Compositor | Hyprland |
+| Bar | Waybar |
+| Lock | Hyprlock |
+| App launcher | Rofi-wayland |
+| Term emulator | Kitty |
+
 ![Image](https://github.com/user-attachments/assets/acbd0325-0c5e-46c6-8bff-53ed177ca249)
 
 ![Image](https://github.com/user-attachments/assets/f8ded207-7ed9-478a-8d4d-87be1c5c5751)
@@ -39,3 +47,8 @@ and ~/.config/fish/config.fish
 ```
 starship init fish | source
 ```
+
+## Copying
+
+You can basically do whaterver your heart desires with this repo, as long as it's under GPL-3.0 license. 
+I would be even proud if someone would want to fork this repo or help out with better dots!
