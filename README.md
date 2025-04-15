@@ -4,11 +4,12 @@ A minimalistic Hyprland configuration for linux (Arch). I use it as a productive
 
 | Sysetm part | Name |
 |---|---|
-| Compositor | Hyprland |
-| Bar | Waybar |
-| Lock | Hyprlock |
-| App launcher | Rofi-wayland |
-| Term emulator | Kitty |
+| Compositor | [Hyprland](https://github.com/hyprwm/Hyprland) |
+| Bar | [Waybar](https://github.com/Alexays/Waybar) |
+| Lock | [Hyprlock](https://github.com/hyprwm/hyprlock) |
+| App launcher | [Rofi-wayland](https://github.com/in0ni/rofi-wayland) |
+| Term emulator | [Kitty](https://github.com/kovidgoyal/kitty) |
+| Promt | [Starship](https://github.com/starship/starship) |
 
 ![Image](https://github.com/user-attachments/assets/acbd0325-0c5e-46c6-8bff-53ed177ca249)
 
@@ -30,8 +31,8 @@ cd my-linux
 sh install.sh
 ```
 
-And this is it! Besides I think  zsh (that is what I use) setup, which you will need to do yourself.
-For starship to work, if you have bash, zsh or fish installed add this to the end of your shell config:
+And this is it! Besides I think shell setup (I use zsh), which you will need to do yourself.
+For starship promt to work, if you have bash, zsh or fish installed add this to the end of your shell config:
 
 .bashrc
 ```
@@ -50,5 +51,5 @@ starship init fish | source
 
 ## Copying
 
-You can basically do whaterver your heart desires with this repo, as long as it's under GPL-3.0 license. 
+You can basically do whaterver your heart desires with this repo, as long as it's under BSD-3 license. 
 I would be even proud if someone would want to fork this repo or help out with better dots!
