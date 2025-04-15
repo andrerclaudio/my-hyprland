@@ -52,4 +52,4 @@ starship init fish | source
 ## Copying
 
 You can basically do whaterver your heart desires with this repo, as long as it's under BSD-3 license. 
-I would be even proud if someone wanted to fork this repo or help out with better dots!
+I would be glad if someone wanted to contribute to this repo!
