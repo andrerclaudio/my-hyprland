@@ -51,6 +51,9 @@ starship init fish | source
 
 ## Keybindings
 
+Feel free to change and mess around with them, nothing will break if you know what you are doing after all.
+Plus even I personally haven't come up with smth 100% convinient yet.
+
 |Keybind|Result|
 |---|---|
 | Super + Return | Kitty |
