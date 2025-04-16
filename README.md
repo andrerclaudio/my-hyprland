@@ -1,7 +1,13 @@
-# Frogprog Hyprland Dotfiles
+<div align="center">
+<img alt="Profiles Pictures" src="https://github.com/user-attachments/assets/40a46c3f-364b-47aa-b2b4-5011d18f22f1" width="200" height="200"/>
+</div>
+<div align="center">
+    <h1> Frogprog Hyprland Dotfiles</h1>
+    <h4> A simple Hyprland configuration for linux (Arch). I use it as a productive setup on my thinkpad (14 inch)</h4>
+</div>
+</div>
 
-A minimalistic Hyprland configuration for linux (Arch). I use it as a productive setup on my thinkpad (14 inch).
-
+### Things that are used in setup
 | Sysetm part | Name |
 |---|---|
 | Compositor | [Hyprland](https://github.com/hyprwm/Hyprland) |
@@ -16,6 +22,8 @@ A minimalistic Hyprland configuration for linux (Arch). I use it as a productive
 ![Image](https://github.com/user-attachments/assets/7c183b04-7e9f-466f-aa13-6c541ef1fc88)
 
 ## Installation
+
+#### Install it at your own risk, though I've tried to do everything as save as possibe, there still might be bugs that I haven't discovered yet!
 
 To install this setup I've created a script that should backup your cofings of programs that I use here in ~/.config/xxx-backup
 My script works only with files so that is why you have to make sure that everything is installed on your system:
@@ -72,7 +80,15 @@ Plus even I personally haven't come up with smth 100% convinient yet.
 
 This is it for now, in the future I'm gonna add cheatsheet to waybar 
 
+## Screenshots
+![Image](https://github.com/user-attachments/assets/32d00175-a0cc-4ae7-ae4e-87bdcbb49f2a)
+
 ## Copying
 
 You can basically do whaterver your heart desires with this repo, as long as it's under BSD-3 license. 
 I would be glad if someone wanted to contribute to this repo!
+
+## Credits
+
+- Thanks [r/unixporn](https://www.reddit.com/r/unixporn/) for awesome inspirational setups
+- Thanks [1amSimpl1e](https://github.com/1amSimp1e/dots) for amaizing readme example
