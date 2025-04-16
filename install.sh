@@ -9,7 +9,7 @@ __/ /  _  / / /(__  )/ /_ / /_/ /_  / _  / /  __/  /
 
 EOF
 
-# variables for making text bald
+# variables for making text bold
 
 bold=$(tput bold)
 normal=$(tput sgr0)
@@ -17,7 +17,7 @@ normal=$(tput sgr0)
 # asking if user wants to install configs
 
 while true; do
-  read -p "${bald}DO YOU WANT TO START THE INSTALLATION NOW?${normal} (Yy/Nn): " yn
+  read -p "${bold}DO YOU WANT TO START THE INSTALLATION NOW?${normal} (Yy/Nn): " yn
   case $yn in
   [Yy]*)
     echo ":: Installation started."
@@ -39,13 +39,13 @@ done
 # checking if .config directory exists
 
 if test ! -d ~/.config/; then
-  echo "Did not find ${bald}~/.config${normal} directory, creating..."
+  echo "Did not find ${bold}~/.config${normal} directory, creating..."
   mkdir ~/.config/
 
   if [ $? -eq 0 ]; then
-    echo "Created ${bald}~/.config/${normal} directory!"
+    echo "Created ${bold}~/.config/${normal} directory!"
   else
-    echo "Could not create ${bald}~/.config/${normal} directory :("
+    echo "Could not create ${bold}~/.config/${normal} directory :("
     exit 1
   fi
 fi
@@ -53,121 +53,121 @@ fi
 # installing hypr directory
 
 if test -d ~/.config/hypr/; then
-  echo "Found ${bald}~/.config/hypr${normal} directory, backuping it into ${bald}~/.config/hypr-backup..."
+  echo "Found ${bold}~/.config/hypr${normal} directory, backuping it into ${bold}~/.config/hypr-backup..."
   mv ~/.config/hypr/ ~/.config/hypr-backup
    if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bald}~/.config/hypr-backup${normal} directory"
+    echo "Now your old configs are in ${bold}~/.config/hypr-backup${normal} directory"
   fi
 fi
 
 cp -r DOTFILES/.config/hypr ~/.config/
-echo "Copied ${bald}hypr${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}hypr${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing waybar directory
 
 if test -d ~/.config/waybar/; then
-  echo "Found ${bald}~/.config/waybar${normal} directory, backuping it into ${bald}~/.config/waybar-backup..."
+  echo "Found ${bold}~/.config/waybar${normal} directory, backuping it into ${bold}~/.config/waybar-backup..."
   mv ~/.config/waybar/ ~/.config/waybar-backup
    if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bald}~/.config/waybar-backup${normal} directory"
+    echo "Now your old configs are in ${bold}~/.config/waybar-backup${normal} directory"
   fi
 fi
 
 cp -r DOTFILES/.config/waybar ~/.config/
-echo "Copied ${bald}waybar${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}waybar${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing kitty directory
 
 if test -d ~/.config/kitty/; then
-  echo "Found ${bald}~/.config/kitty${normal} directory, backuping it into ${bald}~/.config/kitty-backup..."
+  echo "Found ${bold}~/.config/kitty${normal} directory, backuping it into ${bold}~/.config/kitty-backup..."
   mv ~/.config/kitty/ ~/.config/kitty-backup
    if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bald}~/.config/kitty-backup${normal} directory"
+    echo "Now your old configs are in ${bold}~/.config/kitty-backup${normal} directory"
   fi
 fi
 
 cp -r DOTFILES/.config/kitty ~/.config/
-echo "Copied ${bald}kitty${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}kitty${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing mako directory
 
 if test -d ~/.config/mako/; then
-  echo "Found ${bald}~/.config/mako${normal} directory, backuping it into ${bald}~/.config/mako-backup..."
+  echo "Found ${bold}~/.config/mako${normal} directory, backuping it into ${bold}~/.config/mako-backup..."
   mv ~/.config/mako/ ~/.config/mako-backup
    if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bald}~/.config/mako-backup${normal} directory"
+    echo "Now your old configs are in ${bold}~/.config/mako-backup${normal} directory"
   fi
 fi
 
 cp -r DOTFILES/.config/mako ~/.config/
-echo "Copied ${bald}mako${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}mako${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing starship.toml file
 
 if test -f ~/.config/starship.toml; then
-  echo "Found ${bald}~/.config/starship.toml${normal} file, backuping it into ${bald}~/.config/starship-backup.toml..."
+  echo "Found ${bold}~/.config/starship.toml${normal} file, backuping it into ${bold}~/.config/starship-backup.toml..."
   mv ~/.config/starship.toml ~/.config/starship-backup.toml
    if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bald}~/.config/starship-backup.toml${normal} file"
+    echo "Now your old configs are in ${bold}~/.config/starship-backup.toml${normal} file"
   fi
 fi
 
 cp DOTFILES/.config/starship.toml ~/.config/
-echo "Copied ${bald}starship${normal} file from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}starship${normal} file from this repo to ${bold}~/.config/${normal} directory"
 
 # installing wallpapers directory
 
 if test -d ~/.config/wallpapers/; then
-  echo "Found ${bald}~/.config/wallpapers/${normal} directory, backuping it into ${bald}~/.config/wallpapers-backup..."
+  echo "Found ${bold}~/.config/wallpapers/${normal} directory, backuping it into ${bold}~/.config/wallpapers-backup..."
   mv ~/.config/wallpapers ~/.config/wallpapers-backup
    if [ $? -eq 0 ]; then
-    echo "Now your old wallpapers are in ${bald}~/.config/wallpapers-backup${normal} directory"
+    echo "Now your old wallpapers are in ${bold}~/.config/wallpapers-backup${normal} directory"
   fi
 fi
 
 cp -r wallpapers ~/.config/
-echo "Copied ${bald}wallpapers${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}wallpapers${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing rofi directory
 
 if test -d ~/.config/rofi/; then
-  echo "Found ${bald}~/.config/rofi${normal} directory, backuping it into ${bald}~/.config/rofi-backup..."
+  echo "Found ${bold}~/.config/rofi${normal} directory, backuping it into ${bold}~/.config/rofi-backup..."
   mv ~/.config/rofi/ ~/.config/rofi-backup
    if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bald}~/.config/rofi-backup${normal} directory"
+    echo "Now your old configs are in ${bold}~/.config/rofi-backup${normal} directory"
   fi
 fi
 
 cp -r DOTFILES/.config/rofi ~/.config/
-echo "Copied ${bald}rofi${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}rofi${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 # installing wlogout directory
 
 if test -d ~/.config/wlogout/; then
-  echo "Found ${bald}~/.config/wlogout${normal} directory, backuping it into ${bald}~/.config/wlogout-backup..."
+  echo "Found ${bold}~/.config/wlogout${normal} directory, backuping it into ${bold}~/.config/wlogout-backup..."
   mv ~/.config/wlogout/ ~/.config/wlogout-backup
    if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bald}~/.config/wlogout-backup${normal} directory"
+    echo "Now your old configs are in ${bold}~/.config/wlogout-backup${normal} directory"
   fi
 fi
 
 cp -r DOTFILES/.config/wlogout ~/.config/
-echo "Copied ${bald}wlogout${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+echo "Copied ${bold}wlogout${normal} directory from this repo to ${bold}~/.config/${normal} directory"
 
 
 # installing .face file
 #
 
 if test -f ~/.face; then
-  echo "Found ${bald}~/.face${normal} file, backuping it into ${bald}~/.face-backup..."
+  echo "Found ${bold}~/.face${normal} file, backuping it into ${bold}~/.face-backup..."
   mv ~/.face ~/.face-backup   
   if [ $? -eq 0 ]; then
-    echo "Now your old avatar is in ${bald}~/.face-backup${normal} file"
+    echo "Now your old avatar is in ${bold}~/.face-backup${normal} file"
   fi
 fi
 
 cp .face ~/
-echo "Copied ${bald}.face${normal} file from this repo to ${bald}home${normal} directory"
+echo "Copied ${bold}.face${normal} file from this repo to ${bold}home${normal} directory"
 
 cat << "BYE"
 __  __                       ______              ______________   ______            ____________             
