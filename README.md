@@ -56,6 +56,7 @@ starship init fish | source
 | Super + Return | Kitty |
 | Super + D | Rofi |
 | Super + E | Nautilus |
+| Super + B | Bluetooth manager |
 | Super + S | Hyprshot |
 | Super + A | Wlogout |
 | Super + M | Exit hyprland |
