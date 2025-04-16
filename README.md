@@ -63,6 +63,7 @@ Plus even I personally haven't come up with smth 100% convinient yet.
 | Super + S | Hyprshot |
 | Super + A | Wlogout |
 | Super + M | Exit hyprland |
+| Super + Q | Close window |
 | Super + V | Toggle floating |
 | Super + F | Toggle fullscreen |
 | Super + H,J,K,L | Move focus |
