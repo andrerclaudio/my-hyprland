@@ -141,6 +141,20 @@ fi
 cp -r DOTFILES/.config/rofi ~/.config/
 echo "Copied ${bald}rofi${normal} directory from this repo to ${bald}~/.config/${normal} directory"
 
+# installing wlogout directory
+
+if test -d ~/.config/wlogout/; then
+  echo "Found ${bald}~/.config/wlogout${normal} directory, backuping it into ${bald}~/.config/wlogout-backup..."
+  mv ~/.config/wlogout/ ~/.config/wlogout-backup
+   if [ $? -eq 0 ]; then
+    echo "Now your old configs are in ${bald}~/.config/wlogout-backup${normal} directory"
+  fi
+fi
+
+cp -r DOTFILES/.config/wlogout ~/.config/
+echo "Copied ${bald}wlogout${normal} directory from this repo to ${bald}~/.config/${normal} directory"
+
+
 # installing .face file
 #
 

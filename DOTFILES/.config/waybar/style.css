@@ -58,13 +58,13 @@ button:hover {
 }
 
 #workspaces /* button */ {
-     background-color: #1e1e2e;
+     background-color: #32302F;
   color: #FFFFFF;
   padding: 0px 10px 0px 10px;
   margin: 3px 15px 3px 15px;
   border-radius: 8px;
   opacity: 1;
-  border: 2px solid #272829;
+  border: 2px solid #A89984;
 }
 
 #workspaces button {
@@ -163,24 +163,24 @@ button:hover {
 
 /*doing islands for left module group*/
 .modules-left { 
-     background-color: #1e1e2e;
-  color: #cdd6f4;
+     background-color: #32302F;
+  color: #FFFFFF;
   padding: 0px 10px 0px 10px;
   margin: 3px 15px 3px 15px;
   border-radius: 8px;
   opacity: 0.8;
-  border: 2px solid #272829;
+  border: 2px solid #A89984;
 }
 
 /*doing islands for right module group*/
 .modules-right { 
-     background-color: #1e1e2e;
-  color: #cdd6f4;
+     background-color: #32302F;
+  color: #FFFFFF;
   padding: 0px 10px 0px 10px;
   margin: 3px 15px 3px 15px;
   border-radius: 8px;
   opacity: 0.8;
-  border: 2px solid #272829;
+  border: 2px solid #A89984;
 }
 
 #clock {

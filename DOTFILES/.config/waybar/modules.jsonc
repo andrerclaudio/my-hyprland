@@ -13,9 +13,9 @@
   "battery": {
     "interval":30,
     "states": {
-        "good": 95,
-        "warning": 30,
-        "critical": 20
+      "good": 95,
+      "warning": 30,
+      "critical": 20,
     },
     "format": "{capacity}% {icon}",
     "format-charging": "{capacity}% 󰂄",
@@ -176,6 +176,10 @@
       "pulseaudio", 
       "custom/separator",
       "battery", 
+      "custom/separator",
+      "custom/lock",
+      "custom/separator",
+      "custom/shutdown",
     ]
   },
 
@@ -232,5 +236,19 @@
   "temperature": {
     "critical-threshold": 80,
     "format": "",
+  },
+
+  // lock module
+  "custom/lock": {
+    "format": "󰌾 ",
+    "on-click": "hyprlock",
+    "tooltip": "false",
+  },
+
+  // shutdown module
+  "custom/shutdown": {
+    "format": " ",
+    "on-click": "wlogout",
+    "tooltip": "false",
   },
 }
