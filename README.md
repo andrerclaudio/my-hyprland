@@ -11,9 +11,9 @@ A minimalistic Hyprland configuration for linux (Arch). I use it as a productive
 | Term emulator | [Kitty](https://github.com/kovidgoyal/kitty) |
 | Promt | [Starship](https://github.com/starship/starship) |
 
-![Image](https://github.com/user-attachments/assets/acbd0325-0c5e-46c6-8bff-53ed177ca249)
+![Image](https://github.com/user-attachments/assets/98a1a4ac-9998-40cf-ac43-65405ef2b907)
 
-![Image](https://github.com/user-attachments/assets/f8ded207-7ed9-478a-8d4d-87be1c5c5751)
+![Image](https://github.com/user-attachments/assets/7c183b04-7e9f-466f-aa13-6c541ef1fc88)
 
 ## Installation
 
@@ -65,7 +65,7 @@ starship init fish | source
 | Super + 1-0 | Cange workspaces |
 | Super + Shift + 1-0 | Move window to workspace |
 
-This is it for now, in the future I'm gonna add cheatsheet to waybar :D
+This is it for now, in the future I'm gonna add cheatsheet to waybar 
 
 ## Copying
 
