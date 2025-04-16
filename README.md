@@ -49,6 +49,24 @@ and ~/.config/fish/config.fish
 starship init fish | source
 ```
 
+## Keybindings
+
+|Keybind|Result|
+|---|---|
+| Super + Return | Kitty |
+| Super + D | Rofi |
+| Super + E | Nautilus |
+| Super + S | Hyprshot |
+| Super + A | Wlogout |
+| Super + M | Exit hyprland |
+| Super + V | Toggle floating |
+| Super + F | Toggle fullscreen |
+| Super + H,J,K,L | Move focus |
+| Super + 1-0 | Cange workspaces |
+| Super + Shift + 1-0 | Move window to workspace |
+
+This is it for now, in the future I'm gonna add cheatsheet to waybar :D
+
 ## Copying
 
 You can basically do whaterver your heart desires with this repo, as long as it's under BSD-3 license. 
