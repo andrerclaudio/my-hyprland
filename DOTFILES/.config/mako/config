@@ -2,15 +2,15 @@ sort=-time
 layer=overlay
 
 # Styling
-background-color=#3034466f
-text-color=#d6e0f5
+background-color=#32302F
+text-color=#FFFFFF
 width=420
 height=150
 anchor=top-right
 
 border-size=1
-border-color=#232634c0
-border-radius=16
+border-color=#A89984
+border-radius=8
 
 progress-color=over #51576dff
 
