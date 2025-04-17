@@ -91,4 +91,4 @@ I would be glad if someone wanted to contribute to this repo!
 ## Credits
 
 - Thanks [r/unixporn](https://www.reddit.com/r/unixporn/) for awesome inspirational setups
-- Thanks [1amSimpl1e](https://github.com/1amSimp1e/dots) for amaizing readme example
+- Thanks [1amSimp1e](https://github.com/1amSimp1e/dots) for amaizing readme example
