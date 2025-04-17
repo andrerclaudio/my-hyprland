@@ -26,13 +26,14 @@
 #### Install it at your own risk, though I've tried to do everything as save as possibe, there still might be bugs that I haven't discovered yet!
 
 To install this setup I've created a script that should backup your cofings of programs that I use here in ~/.config/xxx-backup
-My script works only with files so that is why you have to make sure that everything is installed on your system:
+
+1. My script works only with files so that is why you have to make sure that everything is installed on your system:
 
 ```bash
 sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprlock hyprpolkitagent waybar rofi-wayland kitty nautilus mako starship git   
 ```
 
-Then you can copy my repo and run script that should install my setup:
+2. Then you can copy my repo and run script that should install my setup:
 ```bash
 git clone https://github.com/FrogProg09/my-linux.git 
 cd my-linux
