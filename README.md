@@ -21,26 +21,33 @@
 
 ![Image](https://github.com/user-attachments/assets/7c183b04-7e9f-466f-aa13-6c541ef1fc88)
 
-## Installation(BETA)
+## Installation
 
-**The script is not working properly yet, if you want to install it, you will have to do it manually**
+**The script should be fine, please report if something went wrong**
 
-To install this setup I've created a script that should backup your cofings of programs that I use here in ~/.config/xxx-backup
+To install this setup I've created a script that should backup your cofings of programs that I use here in 
+~/.config/hyprland-oldconfigs directory
 
 1. My script works only with files so that is why you have to make sure that everything is installed on your system:
 
 ```bash
-sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprlock hyprpolkitagent waybar rofi-wayland kitty nautilus mako starship git   
+sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprpolkitagent waybar rofi-wayland kitty nautilus mako starship git   
 ```
 
-2. Then you can copy my repo and run script that should install my setup:
+```bash
+yay -S hyprlock 
+```
+
+2. Then you can copy my repo and run script that will install my setup:
 ```bash
 git clone https://github.com/FrogProg09/my-linux.git 
 cd my-linux
-sh install.sh
+bash install.sh
 ```
 
 And this is it! Besides I think shell setup (I use zsh), which you will need to do yourself.
+
+
 For starship promt to work, if you have bash, zsh or fish installed add this to the end of your shell config:
 
 .bashrc

@@ -38,7 +38,7 @@ done
 # Define variables
 CONFIG_DIR="$HOME/.config"
 DOTFILES_DIR="$(pwd)/DOTFILES/.config"
-BACKUP_DIR="${CONFIG_DIR}/hyprland-oldconfigs"  # Change xxx to your preferred name
+BACKUP_DIR="${CONFIG_DIR}/hyprland-oldconfigs"
 
 # Create backup directory
 mkdir -p "$BACKUP_DIR"
