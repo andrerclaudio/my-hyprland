@@ -51,6 +51,7 @@ DIRS_TO_COPY=(
   "rofi"
   "waybar"
   "wlogout"
+  "wallpapers"
 )
 
 # Function to handle success or failure messages
