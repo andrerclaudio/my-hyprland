@@ -35,144 +35,65 @@ while true; do
   esac
 done
 
+# Define variables
+CONFIG_DIR="$HOME/.config"
+DOTFILES_DIR="$(pwd)/DOTFILES/.config"
+BACKUP_DIR="${CONFIG_DIR}/hyprland-oldconfigs"  # Change xxx to your preferred name
 
-# checking if .config directory exists
+# Create backup directory
+mkdir -p "$BACKUP_DIR"
 
-if test ! -d ~/.config/; then
-  echo "Did not find ${bold}~/.config${normal} directory, creating..."
-  mkdir ~/.config/
+# List of directories to backup and copy. Add or remove as needed.
+DIRS_TO_COPY=(
+  "hypr"    
+  "kitty"
+  "mako"
+  "rofi"
+  "waybar"
+  "wlogout"
+)
 
+# Function to handle success or failure messages
+check_status() {
   if [ $? -eq 0 ]; then
-    echo "Created ${bold}~/.config/${normal} directory!"
+    echo "Operation successful."
   else
-    echo "Could not create ${bold}~/.config/${normal} directory :("
+    echo "Operation failed!"
     exit 1
   fi
-fi
+}
 
-# installing hypr directory
-
-if test -d ~/.config/hypr/; then
-  echo "Found ${bold}~/.config/hypr${normal} directory, backuping it into ${bold}~/.config/hypr-backup..."
-  mv ~/.config/hypr/ ~/.config/hypr-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/hypr-backup${normal} directory"
+# Backup old configurations
+for dir in "${DIRS_TO_COPY[@]}"; do
+  if [ -d "$CONFIG_DIR/$dir" ]; then
+    echo "Backing up existing configuration: $CONFIG_DIR/$dir to $BACKUP_DIR/$dir"
+    mv "$CONFIG_DIR/$dir" "$BACKUP_DIR/"
+    check_status
   fi
+done
+
+# Copy new configurations
+for dir in "${DIRS_TO_COPY[@]}"; do
+    echo "Copying new configuration from $DOTFILES_DIR/$dir to $CONFIG_DIR/$dir"
+    cp -r "$DOTFILES_DIR/$dir" "$CONFIG_DIR/"
+    check_status
+done
+
+# starship promt configuration
+PROMT="$(pwd)/DOTFILES/.config/starship.toml"
+OLD_PROMT="$HOME/.config/starship.toml"
+
+# Copy starship promt
+if [ -f "$OLD_PROMT" ]; then
+  echo "Backing up existing configuration: $OLD_PROMT to $BACKUP_DIR"
+  mv "$OLD_PROMT" "$BACKUP_DIR/"
+  check_status
 fi
 
-cp -r ~/my-linux/DOTFILES/.config/hypr ~/.config/
-
-if [ $? -eq 0 ]; then
-  echo "Copied ${bold}hypr${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-else
-  echo "Could not copy ${bold}hypr${normal} directory to ~/.config/ :("
-fi
-
-# installing waybar directory
-
-if test -d ~/.config/waybar/; then
-  echo "Found ${bold}~/.config/waybar${normal} directory, backuping it into ${bold}~/.config/waybar-backup..."
-  mv ~/.config/waybar/ ~/.config/waybar-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/waybar-backup${normal} directory"
-  fi
-fi
-
-cp -r DOTFILES/.config/waybar ~/.config/
-echo "Copied ${bold}waybar${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing kitty directory
-
-if test -d ~/.config/kitty/; then
-  echo "Found ${bold}~/.config/kitty${normal} directory, backuping it into ${bold}~/.config/kitty-backup..."
-  mv ~/.config/kitty/ ~/.config/kitty-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/kitty-backup${normal} directory"
-  fi
-fi
-
-cp -r DOTFILES/.config/kitty ~/.config/
-echo "Copied ${bold}kitty${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing mako directory
-
-if test -d ~/.config/mako/; then
-  echo "Found ${bold}~/.config/mako${normal} directory, backuping it into ${bold}~/.config/mako-backup..."
-  mv ~/.config/mako/ ~/.config/mako-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/mako-backup${normal} directory"
-  fi
-fi
-
-cp -r DOTFILES/.config/mako ~/.config/
-echo "Copied ${bold}mako${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing starship.toml file
-
-if test -f ~/.config/starship.toml; then
-  echo "Found ${bold}~/.config/starship.toml${normal} file, backuping it into ${bold}~/.config/starship-backup.toml..."
-  mv ~/.config/starship.toml ~/.config/starship-backup.toml
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/starship-backup.toml${normal} file"
-  fi
-fi
-
-cp DOTFILES/.config/starship.toml ~/.config/
-echo "Copied ${bold}starship${normal} file from this repo to ${bold}~/.config/${normal} directory"
-
-# installing wallpapers directory
-
-if test -d ~/.config/wallpapers/; then
-  echo "Found ${bold}~/.config/wallpapers/${normal} directory, backuping it into ${bold}~/.config/wallpapers-backup..."
-  mv ~/.config/wallpapers ~/.config/wallpapers-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old wallpapers are in ${bold}~/.config/wallpapers-backup${normal} directory"
-  fi
-fi
-
-cp -r wallpapers ~/.config/
-echo "Copied ${bold}wallpapers${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing rofi directory
-
-if test -d ~/.config/rofi/; then
-  echo "Found ${bold}~/.config/rofi${normal} directory, backuping it into ${bold}~/.config/rofi-backup..."
-  mv ~/.config/rofi/ ~/.config/rofi-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/rofi-backup${normal} directory"
-  fi
-fi
-
-cp -r DOTFILES/.config/rofi ~/.config/
-echo "Copied ${bold}rofi${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-# installing wlogout directory
-
-if test -d ~/.config/wlogout/; then
-  echo "Found ${bold}~/.config/wlogout${normal} directory, backuping it into ${bold}~/.config/wlogout-backup..."
-  mv ~/.config/wlogout/ ~/.config/wlogout-backup
-   if [ $? -eq 0 ]; then
-    echo "Now your old configs are in ${bold}~/.config/wlogout-backup${normal} directory"
-  fi
-fi
-
-cp -r DOTFILES/.config/wlogout ~/.config/
-echo "Copied ${bold}wlogout${normal} directory from this repo to ${bold}~/.config/${normal} directory"
-
-
-# installing .face file
-#
-
-if test -f ~/.face; then
-  echo "Found ${bold}~/.face${normal} file, backuping it into ${bold}~/.face-backup..."
-  mv ~/.face ~/.face-backup   
-  if [ $? -eq 0 ]; then
-    echo "Now your old avatar is in ${bold}~/.face-backup${normal} file"
-  fi
-fi
-
-cp .face ~/
-echo "Copied ${bold}.face${normal} file from this repo to ${bold}home${normal} directory"
+# Copy new configuration
+echo "Copying new configuration from $PROMT to $CONFIG_DIR"
+cp "$PROMT" "$CONFIG_DIR/" 
+check_status
 
 cat << "BYE"
 __  __                       ______              ______________   ______            ____________             
