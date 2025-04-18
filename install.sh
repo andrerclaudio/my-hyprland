@@ -60,8 +60,13 @@ if test -d ~/.config/hypr/; then
   fi
 fi
 
-cp -r DOTFILES/.config/hypr ~/.config/
-echo "Copied ${bold}hypr${normal} directory from this repo to ${bold}~/.config/${normal} directory"
+cp -r ~/my-linux/DOTFILES/.config/hypr ~/.config/
+
+if [ $? -eq 0 ]; then
+  echo "Copied ${bold}hypr${normal} directory from this repo to ${bold}~/.config/${normal} directory"
+else
+  echo "Could not copy ${bold}hypr${normal} directory to ~/.config/ :("
+fi
 
 # installing waybar directory
 

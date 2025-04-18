@@ -21,9 +21,9 @@
 
 ![Image](https://github.com/user-attachments/assets/7c183b04-7e9f-466f-aa13-6c541ef1fc88)
 
-## Installation
+## Installation(BETA)
 
-#### Install it at your own risk, though I've tried to do everything as save as possibe, there still might be bugs that I haven't discovered yet!
+**The script is not working properly yet, if you want to install it, you will have to do it manually**
 
 To install this setup I've created a script that should backup your cofings of programs that I use here in ~/.config/xxx-backup
 
