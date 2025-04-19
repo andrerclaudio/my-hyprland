@@ -31,6 +31,9 @@ To install this setup I've created a script that should backup your cofings of p
 1. My script works only with files so that is why you have to make sure that everything is installed on your system:
 
 ```bash
+sudo pacman -Suy
+```
+```bash
 sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprpolkitagent waybar rofi-wayland kitty nautilus mako starship git
 ```
 
