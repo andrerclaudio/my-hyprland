@@ -25,22 +25,22 @@
 
 **The script should be fine, please report if something went wrong**
 
-To install this setup I've created a script that should backup your cofings of programs that I use here in 
+To install this setup I've created a script that should backup your cofings of programs that I use here in
 ~/.config/hyprland-oldconfigs directory
 
 1. My script works only with files so that is why you have to make sure that everything is installed on your system:
 
 ```bash
-sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprpolkitagent waybar rofi-wayland kitty nautilus mako starship git   
+sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprpolkitagent waybar rofi-wayland kitty nautilus mako starship git
 ```
 
 ```bash
-yay -S hyprlock 
+yay -S hyprlock
 ```
 
 2. Then you can copy my repo and run script that will install my setup:
 ```bash
-git clone https://github.com/FrogProg09/my-linux.git 
+git clone https://github.com/FrogProg09/my-linux.git
 cd my-linux
 bash install.sh
 ```
@@ -86,17 +86,22 @@ Plus even I personally haven't come up with smth 100% convinient yet.
 | Super + 1-0 | Cange workspaces |
 | Super + Shift + 1-0 | Move window to workspace |
 
-This is it for now, in the future I'm gonna add cheatsheet to waybar 
+This is it for now, in the future I'm gonna add cheatsheet to waybar
 
 ## Screenshots
 ![Image](https://github.com/user-attachments/assets/32d00175-a0cc-4ae7-ae4e-87bdcbb49f2a)
 
 ## Copying
 
-You can basically do whaterver your heart desires with this repo, as long as it's under BSD-3 license. 
+You can basically do whaterver your heart desires with this repo, as long as it's under BSD-3 license.
 I would be glad if someone wanted to contribute to this repo!
 
 ## Credits
 
 - Thanks [r/unixporn](https://www.reddit.com/r/unixporn/) for awesome inspirational setups
 - Thanks [1amSimp1e](https://github.com/1amSimp1e/dots) for amaizing readme example
+
+*If you need to contact with me:*
+
+- Discord: Frogprog
+- Telegram: @Chocolate_waffels
