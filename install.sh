@@ -50,7 +50,7 @@ CONFIG_DIR="$HOME/.config"
 DOTFILES_DIR="$(pwd)/DOTFILES/.config"
 BACKUP_DIR="${CONFIG_DIR}/hyprland-oldconfigs"
 
-test [ -d $BACKUP_DIR ]; then
+if [ -d $BACKUP_DIR ]; then
   echo "Found already existing $BACKUP_DIR, deleting..."
   rm -r $BACKUP_DIR
   check_status
