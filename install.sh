@@ -35,10 +35,26 @@ while true; do
   esac
 done
 
+# Function to handle success or failure messages
+check_status() {
+  if [ $? -eq 0 ]; then
+    echo "Operation successful."
+  else
+    echo "Operation failed!"
+    exit 1
+  fi
+}
+
 # Define variables
 CONFIG_DIR="$HOME/.config"
 DOTFILES_DIR="$(pwd)/DOTFILES/.config"
 BACKUP_DIR="${CONFIG_DIR}/hyprland-oldconfigs"
+
+test [ -d $BACKUP_DIR ]; then
+  echo "Found already existing $BACKUP_DIR, deleting..."
+  rm -r $BACKUP_DIR
+  check_status
+fi
 
 # Create backup directory
 mkdir -p "$BACKUP_DIR"
@@ -53,16 +69,6 @@ DIRS_TO_COPY=(
   "wlogout"
   "wallpapers"
 )
-
-# Function to handle success or failure messages
-check_status() {
-  if [ $? -eq 0 ]; then
-    echo "Operation successful."
-  else
-    echo "Operation failed!"
-    exit 1
-  fi
-}
 
 # Backup old configurations
 for dir in "${DIRS_TO_COPY[@]}"; do
