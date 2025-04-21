@@ -25,8 +25,8 @@
 
 **The script should be fine, please report if something went wrong**
 
-To install this setup I've created a script that should backup your cofings of programs that I use here in
-~/.config/hyprland-oldconfigs directory
+To install this setup I've created a script that will backup your cofings of programs that I use here in
+~/.config/hyprland-oldconfigs/*version* directory
 
 1. My script works only with files so that is why you have to make sure that everything is installed on your system:
 
@@ -51,7 +51,7 @@ bash install.sh
 And this is it! Besides I think shell setup (I use zsh), which you will need to do yourself.
 
 
-For starship promt to work, if you have bash, zsh or fish installed add this to the end of your shell config:
+If you want starship promt to work, you have to add one of these lines to the end of shell config respectively:
 
 .bashrc
 ```
