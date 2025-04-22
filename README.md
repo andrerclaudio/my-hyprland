@@ -1,5 +1,5 @@
 <div align="center">
-<img alt="Profiles Pictures" src="https://github.com/user-attachments/assets/40a46c3f-364b-47aa-b2b4-5011d18f22f1" width="200" height="200"/>
+<img alt="Profiles Pictures" src="https://github.com/FrogProg09/my-linux/blob/82a8df9a627c601c8f17605d98d9bc224ee22d0d/images/github_avatar.png" width="200" height="200"/>
 </div>
 <div align="center">
     <h1> Frogprog Hyprland Dotfiles</h1>
@@ -17,9 +17,9 @@
 | Term emulator | [Kitty](https://github.com/kovidgoyal/kitty) |
 | Promt | [Starship](https://github.com/starship/starship) |
 
-![Image](https://github.com/user-attachments/assets/98a1a4ac-9998-40cf-ac43-65405ef2b907)
+![image alt](https://github.com/FrogProg09/my-linux/blob/82a8df9a627c601c8f17605d98d9bc224ee22d0d/images/clean.png)
 
-![Image](https://github.com/user-attachments/assets/7c183b04-7e9f-466f-aa13-6c541ef1fc88)
+![image alt](https://github.com/FrogProg09/my-linux/blob/82a8df9a627c601c8f17605d98d9bc224ee22d0d/images/workflow.png)
 
 ## Installation
 
@@ -92,7 +92,7 @@ Plus even I personally haven't come up with smth 100% convinient yet.
 This is it for now, in the future I'm gonna add cheatsheet to waybar
 
 ## Screenshots
-![Image](https://github.com/user-attachments/assets/32d00175-a0cc-4ae7-ae4e-87bdcbb49f2a)
+![image alt](https://github.com/FrogProg09/my-linux/blob/82a8df9a627c601c8f17605d98d9bc224ee22d0d/images/pretty.png)
 
 ## Copying
 
