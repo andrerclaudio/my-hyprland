@@ -92,7 +92,12 @@ Plus even I personally haven't come up with smth 100% convinient yet.
 This is it for now, in the future I'm gonna add cheatsheet to waybar
 
 ## Screenshots
+
+![image alt](https://github.com/FrogProg09/my-linux/blob/0125a8255c04a4ab10bfb48d653e15e96e499151/images/clean-right.png)
+
 ![image alt](https://github.com/FrogProg09/my-linux/blob/82a8df9a627c601c8f17605d98d9bc224ee22d0d/images/pretty.png)
+
+![image alt](https://github.com/FrogProg09/my-linux/blob/0125a8255c04a4ab10bfb48d653e15e96e499151/images/wlogout-light.png)
 
 ## Copying
 
