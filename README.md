@@ -28,7 +28,7 @@
 To install this setup I've created a script that will backup your cofings of programs that I use here in
 ~/.config/hyprland-oldconfigs/*version* directory
 
-1. My script works only with files so that is why you have to make sure that everything is installed on your system:
+My script works only with files so that is why you have to make sure that everything is installed on your system:
 
 ```bash
 sudo pacman -Suy
@@ -41,11 +41,25 @@ sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprpolkitagent waybar rofi-
 yay -S hyprlock
 ```
 
-2. Then you can copy my repo and run script that will install my setup:
+So, there are two themes for now, it is dark and light gruvbox, depending on what you wnat, choose instalation process
+
+### Dark
+
+ Copy my repo and run script that will install my setup:
 ```bash
-git clone https://github.com/FrogProg09/my-linux.git
+git clone -b main --single-branch https://github.com/FrogProg09/my-linux.git
 cd my-linux
-bash install.sh
+chmod +x install.sh
+./install.sh
+```
+
+### Light
+
+```bash
+git clone -b gruvbox-light --single-branch https://github.com/FrogProg09/my-linux.git
+cd my-linux
+chmod +x install.sh
+./install.sh
 ```
 
 And this is it! Besides I think shell setup (I use zsh), which you will need to do yourself.
