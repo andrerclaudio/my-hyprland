@@ -47,7 +47,7 @@ So, there are two themes for now, it is dark and light gruvbox, depending on wha
 
  Copy my repo and run script that will install my setup:
 ```bash
-git clone -b main --single-branch https://github.com/FrogProg09/my-linux.git
+git clone -b gruvbox-dark --single-branch https://github.com/FrogProg09/my-linux.git
 cd my-linux
 chmod +x install.sh
 ./install.sh
