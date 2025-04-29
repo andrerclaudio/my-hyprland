@@ -43,20 +43,16 @@ yay -S hyprlock
 
 So, there are two themes for now, it is dark and light gruvbox, depending on what you wnat, choose instalation process
 
+Now, there are two ways of installing each theme:
+
 ### Dark
 
-**New Feature!**
-
-now you can install dark setup from AUR!
-so all you need to do is:
+- From aur:
 ```bash
 yay -S frogprog-hyprland-dark-git
 ```
-and voila!
 
-or you can:
-
- Copy my repo and run script that will install my setup:
+- From source:
 ```bash
 git clone -b gruvbox-dark --single-branch https://github.com/FrogProg09/my-linux.git
 cd my-linux
@@ -65,6 +61,13 @@ chmod +x install.sh
 ```
 
 ### Light
+
+- From aur:
+```
+yay -S frogprog-hyprland-light-git
+```
+
+- From source:
 
 ```bash
 git clone -b gruvbox-light --single-branch https://github.com/FrogProg09/my-linux.git
