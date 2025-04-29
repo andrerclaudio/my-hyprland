@@ -23,20 +23,18 @@
 
 ## Installation
 
-Now, there are two ways of installing each theme:
-- Inatalling from aur
+To install this setup I've created a script that will backup your cofings of programs that I use here in
+~/.config/hyprland-oldconfigs/*version* directory
+
+Now, there are two ways of installing each of two themes:
+- Inatalling from AUR
 
 - Building from source
 
 I am trying to keep aur packages up to date, but if you want to make sure you're on bleeding edge, you can build 
-it from source, in the end, there is literally no difference in these two after all. 
+it from source, in the end, there is literally no difference in these two. 
 
-### If you want to build from source, make sure to make these steps
-
-**The script should be fine, please report if something went wrong**
-
-To install this setup I've created a script that will backup your cofings of programs that I use here in
-~/.config/hyprland-oldconfigs/*version* directory
+**If you want to build from source, make sure to do these steps**
 
 My script works only with files so that is why you have to make sure that everything is installed on your system:
 
@@ -50,8 +48,9 @@ sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprpolkitagent waybar rofi-
 ```bash
 yay -S hyprlock
 ```
+After it you will have installed all the dependencies for this setup.
 
-So, there are two themes for now, it is dark and light gruvbox, depending on what you wnat, choose instalation process
+So, there are two themes for now, it is dark and light gruvbox, depending on want you wnat, choose instalation process
 
 ### Dark
 
@@ -76,7 +75,6 @@ yay -S frogprog-hyprland-light-git
 ```
 
 - From source:
-
 ```bash
 git clone -b gruvbox-light --single-branch https://github.com/FrogProg09/my-linux.git
 cd my-linux
@@ -84,7 +82,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-And this is it! Besides I think shell setup (I use zsh), which you will need to do yourself.
+And this is it! Besides shell setup (I use zsh), which you will need to do yourself.
 
 
 If you want starship promt to work, you have to add one of these lines to the end of shell config respectively:
