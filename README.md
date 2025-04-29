@@ -23,6 +23,16 @@
 
 ## Installation
 
+Now, there are two ways of installing each theme:
+- Inatalling from aur
+
+- Building from source
+
+I am trying to keep aur packages up to date, but if you want to make sure you're on bleeding edge, you can build 
+it from source, in the end, there is literally no difference in these two after all. 
+
+### If you want to build from source, make sure to make these steps
+
 **The script should be fine, please report if something went wrong**
 
 To install this setup I've created a script that will backup your cofings of programs that I use here in
@@ -42,8 +52,6 @@ yay -S hyprlock
 ```
 
 So, there are two themes for now, it is dark and light gruvbox, depending on what you wnat, choose instalation process
-
-Now, there are two ways of installing each theme:
 
 ### Dark
 
