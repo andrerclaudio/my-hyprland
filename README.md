@@ -45,6 +45,17 @@ So, there are two themes for now, it is dark and light gruvbox, depending on wha
 
 ### Dark
 
+**New Feature!**
+
+now you can install dark setup from AUR!
+so all you need to do is:
+```bash
+yay -S frogprog-hyprland-dark-git
+```
+and voila!
+
+or you can:
+
  Copy my repo and run script that will install my setup:
 ```bash
 git clone -b gruvbox-dark --single-branch https://github.com/FrogProg09/my-linux.git
