@@ -23,84 +23,8 @@
 
 ## Installation
 
-To install this setup I've created a script that will backup your cofings of programs that I use here in
-~/.config/hyprland-oldconfigs/*version* directory
-
-Now, there are two ways of installing each of two themes:
-- Inatalling from AUR
-
-- Building from source
-
-I am trying to keep aur packages up to date, but if you want to make sure you're on bleeding edge, you can build 
-it from source, in the end, there is literally no difference in these two. 
-
-**If you want to build from source, make sure to do these steps**
-
-My script works only with files so that is why you have to make sure that everything is installed on your system:
-
-```bash
-sudo pacman -Suy
-```
-```bash
-sudo pacman -S hyprland hyprlang hyprpaper hypridle hyprpolkitagent waybar rofi-wayland kitty nautilus mako starship git
-```
-
-```bash
-yay -S hyprlock
-```
-After it you will have installed all the dependencies for this setup.
-
-So, there are two themes for now, it is dark and light gruvbox, depending on want you wnat, choose instalation process
-
-### Dark
-
-- From aur:
-```bash
-yay -S frogprog-hyprland-dark-git
-```
-
-- From source:
-```bash
-git clone -b gruvbox-dark --single-branch https://github.com/FrogProg09/my-linux.git
-cd my-linux
-chmod +x install.sh
-./install.sh
-```
-
-### Light
-
-- From aur:
-```
-yay -S frogprog-hyprland-light-git
-```
-
-- From source:
-```bash
-git clone -b gruvbox-light --single-branch https://github.com/FrogProg09/my-linux.git
-cd my-linux
-chmod +x install.sh
-./install.sh
-```
-
-And this is it! Besides shell setup (I use zsh), which you will need to do yourself.
-
-
-If you want starship promt to work, you have to add one of these lines to the end of shell config respectively:
-
-.bashrc
-```
-eval "$(starship init bash)"
-```
-
-.zshrc
-```
-eval "$(starship init zsh)"
-```
-
-and ~/.config/fish/config.fish
-```
-starship init fish | source
-```
+For installation guide you can go to the [wiki](https://github.com/FrogProg09/my-linux/wiki) of the project. 
+I've tried to keep it as simple as I could, with detailed instructions it shouldn't be hard to do it.
 
 ## Keybindings
 
