@@ -3,7 +3,7 @@
 </div>
 <div align="center">
     <h1> Frogprog Hyprland Dotfiles</h1>
-    <h4> A simple Hyprland configuration for linux (Arch). I use it as a productive setup on my thinkpad (14 inch)</h4>
+    <h4> A simple Hyprland gruvbox configuration wiht light and dark themes. I use it as a productive setup on my thinkpad (14 inch)</h4>
 </div>
 </div>
 
