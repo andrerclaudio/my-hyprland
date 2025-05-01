@@ -26,6 +26,8 @@
 For installation guide you can go to the [wiki](https://github.com/FrogProg09/my-linux/wiki/installation) of the project. 
 I've tried to keep it as simple as I could, with detailed instructions it shouldn't be hard to do it.
 
+You also can find additional information about configuring this setup in my wiki.
+
 ## Keybindings
 
 Feel free to change and mess around with them, nothing will break if you know what you are doing after all.
