@@ -15,7 +15,7 @@
 | Lock | [Hyprlock](https://github.com/hyprwm/hyprlock) |
 | App launcher | [Rofi-wayland](https://github.com/in0ni/rofi-wayland) |
 | Term emulator | [Kitty](https://github.com/kovidgoyal/kitty) |
-| Promt | [Starship](https://github.com/starship/starship) |
+| Prompt | [Starship](https://github.com/starship/starship) |
 
 ![image alt](https://github.com/FrogProg09/my-linux/blob/82a8df9a627c601c8f17605d98d9bc224ee22d0d/images/clean.png)
 
