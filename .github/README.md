@@ -72,4 +72,4 @@ I would be glad if someone wanted to contribute to this repo!
 *If you need to contact with me:*
 
 - Discord: Frogprog
-- Telegram: @Chocolate_waffels
+- Telegram: @Chocolate_waffels *(preferred)*
