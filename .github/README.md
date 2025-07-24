@@ -49,8 +49,6 @@ Plus even I personally haven't come up with smth 100% convinient yet.
 | Super + 1-0 | Cange workspaces |
 | Super + Shift + 1-0 | Move window to workspace |
 
-This is it for now, in the future I'm gonna add cheatsheet to waybar
-
 ## Screenshots
 
 ![image alt](https://github.com/FrogProg09/my-linux/blob/0125a8255c04a4ab10bfb48d653e15e96e499151/images/clean-right.png)
